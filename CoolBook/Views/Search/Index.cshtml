@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    <h2></h2>
+
+    <div class="nav nav-tabs">
+        <a data-toggle="tab" href="#firstTab">View All</a>
+
+    </div>
+    <div class="tab-content">
+        <div id="firstTab" class="tab-pane fade in active">@Html.Action("ViewAll")</div>
+
+    </div>
+
+<body>
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+    @section scripts{
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+        <script>
+            function activatejQueryTable() {
+                $("#booksTable").DataTable();
+            }
+
+            $(function () {
+                activatejQueryTable();
+            });
+
+        </script>
+    }
+</body>
+    @*<head>
+        <title>Add Read More Link (from DevCurry.com)</title>
+        <script type="text/javascript"
+                src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js">
+        </script>
+        <script type="text/javascript"
+                src="http://plugins.learningjquery.com/expander/jquery.expander.js">
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('th.table table-striped table-condensed').expander({
+                    slicePoint: 200,
+                    expandText: 'Read More',
+                    userCollapseText: 'Hide Text'
+                });
+            });
+        </script>
+    </head>*@

@@ -29,7 +29,7 @@ namespace CoolBooks.Models
         public string Info { get; set; }
         public System.DateTime Created { get; set; }
         public bool IsDeleted { get; set; }
-    
+   
         public virtual AspNetUsers AspNetUsers { get; set; }
     }
 }

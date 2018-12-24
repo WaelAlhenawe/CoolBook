@@ -37,8 +37,9 @@ namespace CoolBooks.ViewModels
         public HttpPostedFileBase ImageUpload { get; set; }
         public System.DateTime Created { get; set; }
         public bool IsDeleted { get; set; }
+        
 
-       
-       
+
+
     }
 }

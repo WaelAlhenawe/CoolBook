@@ -59,5 +59,6 @@ namespace CoolBooks.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reviews> Reviews { get; set; }
        // public Books Books { get; internal set; }
+
     }
 }

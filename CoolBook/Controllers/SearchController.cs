@@ -56,8 +56,8 @@ namespace CoolBooks.Controllers
             }
 
         }
-        
 
+        
         public ActionResult BookDetails(int id)
         {
             CoolBooksEntities dc = new CoolBooksEntities();
